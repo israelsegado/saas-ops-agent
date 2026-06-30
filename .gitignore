@@ -1,0 +1,34 @@
+# Entorno virtual
+.venv/
+
+# Variables de entorno
+.env
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+
+# Ruff
+.ruff_cache/
+
+# Pytest
+.pytest_cache/
+htmlcov/
+.coverage
+
+# Docker
+data/
+
+# IDEs
+.vscode/
+.idea/
+
+# Alembic (no ignorar versions, solo los .pyc dentro)
+alembic/versions/__pycache__/
+
+# OS
+.DS_Store
+Thumbs.db

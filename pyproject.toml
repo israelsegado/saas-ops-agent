@@ -1,0 +1,23 @@
+[project]
+name = "saas-ops-agent"
+version = "0.1.0"
+description = """A multi-agent system for the inside operations team from a SaaS B2B business.
+            The user ask questions in natural languages and the supervisor agent decides
+            whose agent gets active, which tool it uses and when it needs human decisitions
+            before executing an action."""
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "alembic>=1.18.5",
+    "asyncpg>=0.31.0",
+    "pre-commit>=4.6.0",
+    "pydantic>=2.13.4",
+    "pydantic-settings>=2.14.2",
+    "requests>=2.34.2",
+    "sqlalchemy[asyncio]>=2.0.51",
+]
+
+[dependency-groups]
+dev = [
+    "ruff>=0.15.20",
+]
